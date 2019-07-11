@@ -1,0 +1,16 @@
+{
+  "name": "prismic-helpers",
+  "version": "1.0.0",
+  "description": "Sanitize your Prismic response.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Mateusz Skibicki",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "typescript": "^3.5.3"
+  }
+}
