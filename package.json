@@ -1,6 +1,6 @@
 {
   "name": "prismic-helpers-sanitize",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Sanitize your Prismic response.",
   "main": "index.js",
   "keywords": [

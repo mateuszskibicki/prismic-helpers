@@ -41,14 +41,14 @@ In Prismic.io you're getting very big and nested responses. This module is to he
 With this example to get text from title you should go very deep in response object:
 
 ```javascript
-const response = await Primis.someDummyQuery();
+const response = await Prismic.someDummyQuery();
 const titleText = response.results[0].data.title[0].text;
 ```
 
 It means that there is a lot of places where you can get undefined and break your front-end app for example. I don't know how about you but I don't want to make logic like this for everything:
 
 ```javascript
-const response = await Primis.someDummyQuery();
+const response = await Prismic.someDummyQuery();
 const titleText = response.results[0].data.title[0].text;
 
 const DummyReactComponent = () =>
