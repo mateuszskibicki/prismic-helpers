@@ -6,14 +6,18 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "Mateusz Skibicki",
+  "author": {
+    "name": "Mateusz Skibicki",
+    "email": "skibickiengland@gmail.com",
+    "url": "https://github.com/mateuszskibicki"
+  },
+  "homepage": "https://github.com/mateuszskibicki/prismic-helpers",
+  "repository": "github:mateuszskibicki/prismic-helpers",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^24.0.15",
     "jest": "^24.8.0",
-    "typescript": "^3.5.3"
-  },
-  "dependencies": {
+    "typescript": "^3.5.3",
     "@types/node": "^12.6.2"
   }
 }
