@@ -1,6 +1,6 @@
 {
-  "name": "prismic-helpers",
-  "version": "1.0.0",
+  "name": "prismic-helpers-sanitize",
+  "version": "1.0.5",
   "description": "Sanitize your Prismic response.",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,8 @@
     "@types/jest": "^24.0.15",
     "jest": "^24.8.0",
     "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@types/node": "^12.6.2"
   }
 }

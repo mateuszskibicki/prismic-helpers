@@ -45,3 +45,13 @@ exports.EmbedHelper = function (object) {
         return object;
     return null;
 };
+//all helpers at the same time
+exports["default"] = {
+    TextHelper: exports.TextHelper,
+    NumberHelper: exports.NumberHelper,
+    SmallTextHelper: exports.SmallTextHelper,
+    UrlHelper: exports.UrlHelper,
+    ImgHelper: exports.ImgHelper,
+    ArrayHelper: exports.ArrayHelper,
+    EmbedHelper: exports.EmbedHelper
+};

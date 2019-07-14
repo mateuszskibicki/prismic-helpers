@@ -1,12 +1,3 @@
-// import {
-//   TextHelper,
-//   NumberHelper,
-//   SmallTextHelper,
-//   UrlHelper,
-//   ImgHelper,
-//   ArrayHelper
-// } from "./index.js";
-
 const {
   TextHelper,
   NumberHelper,
@@ -14,7 +5,9 @@ const {
   UrlHelper,
   ImgHelper,
   ArrayHelper
-} = require("./index.js");
+} = require("./index");
+
+const PrismicHelpers = require("./index");
 
 describe("PrismicHelpers", () => {
   describe("TextHelper", () => {
@@ -167,5 +160,28 @@ describe("PrismicHelpers", () => {
       expect(ArrayHelper([1, 2, 3])[0]).toBe(1);
       expect(ArrayHelper([1, "2", { dummy: 123 }])[1]).toBe("2");
     });
+  });
+});
+
+describe("prismic-helpers-sanitize - default all - PrismicHelpers", () => {
+  test("should be an object", () => {
+    expect(PrismicHelpers).toBeDefined();
+    expect(typeof PrismicHelpers === "object").toBeTruthy();
+  });
+  test("should has all methods", () => {
+    expect(PrismicHelpers.TextHelper).toBeDefined();
+    expect(typeof PrismicHelpers.TextHelper === "function").toBeTruthy();
+    expect(PrismicHelpers.NumberHelper).toBeDefined();
+    expect(typeof PrismicHelpers.NumberHelper === "function").toBeTruthy();
+    expect(PrismicHelpers.SmallTextHelper).toBeDefined();
+    expect(typeof PrismicHelpers.SmallTextHelper === "function").toBeTruthy();
+    expect(PrismicHelpers.UrlHelper).toBeDefined();
+    expect(typeof PrismicHelpers.UrlHelper === "function").toBeTruthy();
+    expect(PrismicHelpers.ImgHelper).toBeDefined();
+    expect(typeof PrismicHelpers.ImgHelper === "function").toBeTruthy();
+    expect(PrismicHelpers.ArrayHelper).toBeDefined();
+    expect(typeof PrismicHelpers.ArrayHelper === "function").toBeTruthy();
+    expect(PrismicHelpers.EmbedHelper).toBeDefined();
+    expect(typeof PrismicHelpers.EmbedHelper === "function").toBeTruthy();
   });
 });

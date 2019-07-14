@@ -61,3 +61,14 @@ export const EmbedHelper = (object: any | undefined): any | null => {
   if (object) return object;
   return null;
 };
+
+//all helpers at the same time
+export default {
+  TextHelper,
+  NumberHelper,
+  SmallTextHelper,
+  UrlHelper,
+  ImgHelper,
+  ArrayHelper,
+  EmbedHelper
+};
