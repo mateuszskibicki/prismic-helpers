@@ -9,7 +9,11 @@ Author: [Mateusz Skibicki](https://github.com/mateuszskibicki).
 # How to import to your project
 
 ```javascript
-//Node.js
+/**
+|--------------------------------------------------
+| Back-end -> Node.js
+|--------------------------------------------------
+*/
 const {
   TextHelper,
   NumberHelper,
@@ -18,10 +22,16 @@ const {
   ImgHelper,
   ArrayHelper
 } = require("prismic-helpers-sanitize");
-//or
+//or for all
 const PrismicHelpers = require("prismic-helpers-sanitize");
+//and then
+const dummyTitle = PrismicHelpers.TextHelper(someDummyResponse);
 
-//Front-end -> React.js example
+/**
+|--------------------------------------------------
+| Front-end -> React.js/Next.js example
+|--------------------------------------------------
+*/
 import {
   TextHelper,
   NumberHelper,
@@ -30,8 +40,10 @@ import {
   ImgHelper,
   ArrayHelper
 } from "prismic-helpers-sanitize";
-//or
+//or for all
 import PrismicHelpers from "prismic-helpers-sanitize";
+//and then
+const dummyTitle = PrismicHelpers.TextHelper(someDummyResponse);
 ```
 
 # WHY to use it
