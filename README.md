@@ -129,6 +129,16 @@ const clearResponse = singleArticleHelper(response);
 clearResponse && <SomeComponent clearResponse={clearResponse} />;
 ```
 
+# WHICH to use
+
+- You just need text from the text field WITHOUT information if this is h1/h2 etc - `TextHelper`
+- You just need text from the text field WITH information if this is h1/h2 etc - `ArrayHelper`
+- Is this Date/ UID/ dropdown/ color? - `SmallTextHelper`
+- Is this external or internal URL? - `UrlHelper` - please notice, you'll get just the url string or null, without \_blank information etc
+- You need image information - url and alternative text? - `ImgHelper`
+- Have you used richtext in prismic and you've got a lot of data to get and information about html elements? - `ArrayHelper` and then I highly recommend to use prismic `RichText` render function -> [RichText.render()](https://prismic.io/docs/reactjs/rendering/rich-text)
+- Have you got embed element like youtube video to show? - `EmbedHelper` and also -> [RichText.render()](https://prismic.io/docs/reactjs/rendering/rich-text)
+
 # HOW these helpers works
 
 My helper functions here are to make life easier. You can use them with all different types of data from Prismic, it will try to get the data from inside of it or return `null`. It's easier to works on `null` than on `undefined` or `''` (empty string) etc. This is whole code I've used, feel free to copy it and play around with your Prismic responses. If you like it, use library or leave a star :D
