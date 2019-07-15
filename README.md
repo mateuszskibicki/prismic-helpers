@@ -1,4 +1,4 @@
-This project is based on headless CMS - Primic - [Prismic.io](https://prismic.io/). Make your Prismic responses smaller and cleaner!
+This project is based on headless CMS - Prismic - [Prismic.io](https://prismic.io/). Make your Prismic responses smaller and cleaner!
 
 Author: [Mateusz Skibicki](https://github.com/mateuszskibicki).
 
@@ -64,7 +64,7 @@ const DummyReactComponent = () =>
   ) : null;
 ```
 
-This is probbaly the safest way of checking if content exists. Step by step.
+This is probably the safest way of checking if content exists. Step by step.
 
 # HOW to use it
 
@@ -209,6 +209,11 @@ export default {
   EmbedHelper
 };
 ```
+
+# Example
+
+Little example with my Next.js/Prismic boilerplate/starter -> ['github link'](https://github.com/mateuszskibicki/next-prismic-starter/blob/master/helpers/SEOhelper.js).
+This is my SEO helper example, my previous company loved this one.
 
 # Testing
 

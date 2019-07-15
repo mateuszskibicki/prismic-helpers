@@ -1,7 +1,7 @@
 {
   "name": "prismic-helpers-sanitize",
-  "version": "1.0.8",
-  "description": "Sanitize your Prismic response.",
+  "version": "1.0.9",
+  "description": "Sanitize/sanitise your Prismic response.",
   "main": "index.js",
   "keywords": [
     "prismic",
@@ -11,7 +11,14 @@
     "headless cms",
     "CMS",
     "sanitize",
-    "sanitise"
+    "sanitise",
+    "typescript",
+    "cms",
+    "javascript",
+    "front-end",
+    "back-end",
+    "react",
+    "node"
   ],
   "scripts": {
     "test": "jest"
