@@ -127,7 +127,7 @@ export const singleArticleHelper = (
 };
 ```
 
-On the Back-End/Front-End I just make some `async await` call to the Prismic api and I put whole response in this helper. This is how it looks:
+On the Back-End/Front-End I just made some `async await` call to the Prismic api and I put whole response in this helper. This is how it looks:
 
 ```javascript
 import { singleArticleHelper } from "../helpers/singleArticleHelper";
@@ -153,7 +153,7 @@ clearResponse && <SomeComponent clearResponse={clearResponse} />;
 
 # HOW these helpers works
 
-My helper functions here are to make life easier. You can use them with all different types of data from Prismic, it will try to get the data from inside of it or return `null`. It's easier to works on `null` than on `undefined` or `''` (empty string) etc. This is whole code I've used, feel free to copy it and play around with your Prismic responses. If you like it, use library or leave a star :D
+My helper functions here are to make life easier. You can use them with all different types of data from Prismic. It will try to get the data from inside of it or return `null`. It's easier to works on `null` than on `undefined` or `''` (empty string) etc. This is the whole code I've used. Feel free to copy it and play around with your Prismic responses. If you like it, use library or leave a star :D
 
 ```typescript
 interface IImg {
